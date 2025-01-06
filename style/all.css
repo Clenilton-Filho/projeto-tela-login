@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --grayblue: #73909B;
+    --darkblue: #1F2C34;
+    --darkbeige: #E2E2E2;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 24
+}
+html,body{
+    height: 100vh;
+}
+body{
+    background-color: var(--grayblue);
+}
+main{
+    background-color: white;
+    position: absolute;
+    width: 56%;
+    height: 71%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.615);
+    overflow: hidden;
+    transition: all .5s;
+}
+#h1login{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#boasvindas{
+    margin-bottom: 15px;
+}
+main p{
+    width: 90%;
+    text-align: center;
+    text-justify: justify;
+    font-size: 0.8em;
+    margin: auto;
+}
+#divimg{
+    background: url(../media/mountains.jpg);
+    background-size: cover;
+    height: 35%;
+}
+#divlogin{
+    margin-top: 5%;
+    height: 55%;
+}
+form{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 70%;
+}
+div .login{
+    width: 90%;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+div .fundoazul{
+    background-color: var(--darkblue);
+    color: white;
+    height: 40px;
+}
+.icon{
+    width: 20%;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 7px;
+    user-select: none;
+}
+input{
+    height: 80%;
+    width: 75%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4px;
+    background-color: var(--darkbeige);
+    text-align: center;
+}
+.botao{
+    border: none;
+    cursor: pointer;
+}
+button span{
+    margin: auto;
+}
+#diventrar{
+    background-color: var(--grayblue);
+    height: 40px;
+    color: white;
+    font-weight: 500;
+}
+#diventrar:hover{
+    background-color: var(--darkblue);
+}
+#esqueci{
+    height: 40px;
+    border: 1px solid var(--darkblue);
+    background-color: white;
+    text-decoration: none;
+    color: var(--darkblue);
+}
+#esqueci span{
+    margin: auto;
+}
+#esqueci:hover{
+    background-color: var(--darkbeige);
+}
+
+footer{
+    background-color: var(--darkblue);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    line-height: 30px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    body{
+        background-image: linear-gradient(to top,var(--grayblue), var(--darkblue));
+    }
+    main{
+        height: 40%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #divimg{
+        height: 100%;
+        width: 30%;
+        right: 0;
+    }
+    #divlogin{
+        height: 95%;
+        width: 70%;
+        margin: auto;
+    }
+    form{
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 65%;
+        margin-top: -2%;
+    }
+    #h1login{
+        font-size: 1.8em;
+        margin: 10px 0;
+    }
+    p{
+        padding: 0;
+    }
+    .botao{
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-image: linear-gradient(to top,var(--grayblue), var(--darkblue));
+    }
+    main{
+        height: 47%;
+        width: 62%;
+        display: flex;
+    }
+    #divimg{
+        height: 100%;
+        width: 50%;
+        right: 0;
+    }
+    #divlogin{
+        height: 80%;
+        width: 50%;
+    }
+    form{
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 72%;
+    }
+    #h1login{
+        font-size: 1.8em;
+        margin-top: -10px;
+        margin-bottom: 25px;
+    }
+}
