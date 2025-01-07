@@ -179,29 +179,31 @@ footer a{
         width: 70%;
         display: flex;
         flex-direction: column;
+        align-content: center;
+        justify-content: center;
     }
     form{
         display:flex;
         justify-content: space-evenly;
         flex-direction: column;
-        height: 65%;
+        max-height: 55%;
     }
     #divtexto{
         min-height: 35%;
-        margin: 5% auto 0 auto;
+        margin: 10vh auto 2% auto;
         justify-content: space-around;
     }
     #h1login{
         line-height: 100%;
-        font-size: 2.8vw;
+        font-size: 1.3em;
     }
     #boasvindas{
         line-height: 100%;
         padding: 0;
-        margin: 0 auto 5% auto;
+        margin: 0 auto 3% auto;
     }
     .icon{
-        width: 4vw;
+        width: 1.5em;
     }
 }
 
